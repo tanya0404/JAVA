@@ -75,24 +75,81 @@
 //    }
 // }
 
+// class day1{
+
+//    public static void Prime(int n) {
+//       int count=0;
+//       for(int i=2;i<n;i++){
+//          if(n%i==0){
+//             count++;
+//          }
+         
+//       }
+//       if(count==0){
+//          System.out.println("prime");
+//       }
+//       else{
+//          System.out.println("not a prime");
+//       }
+//    }
+//    public static void main(String[] args) {
+//       Prime(7);
+//    }
+// }
+
+
+
+// class day1{
+//    public static void count(int n) {
+//       int sum=0;
+//       while (n != 0) {
+//          sum += n % 10;  
+//          n /= 10;       
+//      }
+
+//      System.out.println(sum);
+//    }
+//    public static void main(String[] args) {
+//       count(1234);
+//    }
+// }
+
+
+// class day1{
+//    public static void FibonacciSeries(int n) {
+//       if(n<=0){
+//          System.out.println("give a positive number");
+//       }
+//       else if(n==1){
+//          System.out.println("1");
+//       }
+//       else{
+//          int f=0;
+//          int s=1;
+//          System.out.print(f+" "+s);
+   
+//       for(int i=3;i<=n;i++){
+//          int next=f+s;
+//          System.out.print(" "+next);
+//          f=s;
+//          s=next;
+//       }
+      
+//    }
+// }
+//    public static void main(String[] args) {
+//       FibonacciSeries(7);
+//    }
+// }
+
+
+
 class day1{
 
-   public static void Prime(int n) {
-      int count=0;
-      for(int i=2;i<n;i++){
-         if(n%i==0){
-            count++;
-         }
-         
-      }
-      if(count==0){
-         System.out.println("prime");
-      }
-      else{
-         System.out.println("not a prime");
-      }
+   public static void palim(int n){
+      
    }
    public static void main(String[] args) {
-      Prime(7);
+      
    }
 }
