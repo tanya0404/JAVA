@@ -55,15 +55,22 @@ public class array {
 
 
 
-public static void cal(int[] num,int t) {
-    for(int i=0;i<num.length;i++){
-        for(int j=i+1;j<num.length;j++){
-            if(num[i]+num[j]==t){
-                System.out.println(num[i]+" + "+num[j]);
-            }
-        }
+// public static void cal(int[] num,int t) {
+//     for(int i=0;i<num.length;i++){
+//         for(int j=i+1;j<num.length;j++){
+//             if(num[i]+num[j]==t){
+//                 System.out.println(num[i]+" + "+num[j]);
+//             }
+//         }
+//     }
+// }
+
+
+
+    public int[] reverse(int[] num, int target) {
+        
     }
-}
+    
 
 
 public static void main(String[] args) {
@@ -75,8 +82,7 @@ public static void main(String[] args) {
         arr[i]=sc.nextInt();
     }
 
-    int t=sc.nextInt();
-
-    cal(arr,t);
+    
+    
 }
 }
