@@ -1,4 +1,4 @@
-package pattern.array;
+package Array.array;
 
 import java.util.*;
 public class array {
