@@ -382,6 +382,158 @@ public class Arraylogics {
 
 
 
+                                                // TWO DIMENTION ARRAY
+
+
+
+    
+    
+    // public static void main(String[] args) {
+    //     Scanner s= new Scanner(System.in);
+    //     int n=s.nextInt();
+    //     int m=s.nextInt();
+
+    //     int arr[][]=new int[n][m];
+    //     for(int i=0;i<n;i++){
+    //         for(int j=0;j<m;j++){
+    //             arr[i][j]=s.nextInt();
+    //         }
+    //     }
+    //     for(int i=0;i<n;i++){
+    //         for(int j=0;j<m;j++){
+    //             System.out.println(arr[i][j]+" ");
+    //         }
+    //        System.out.println(); 
+    //     }
+        
+    // }         
+    
+    
+
+                                                        // QUESTIONS
+
+
+
+// public static int find(int[] num,int t){
+//     int l=0;
+//     int h=num.length-1;
+//     int c=0;
+
+
+//     while(l<=h){
+//         int mid=(l+h)/2;
+        
+//             if(t==num[mid]){
+//                 return num[mid];
+//             }
+//             else if(t>num[mid]){
+//                 l=mid+1;
+//                 c=l;
+                
+//             }
+//             else {
+//                 h=mid-1;
+//                 c=l;
+//             }
+            
+            
+//         }
+    
+//         return num[c];
+    
+
+// }
+// public static void main(String[] args) {
+//     Scanner s=new Scanner(System.in);
+//     int n=s.nextInt();
+
+//     int[] arr=new int[n];
+
+//     for(int i=0;i<n;i++){
+//         arr[i]=s.nextInt();
+//     }
+//     int t=s.nextInt();
+//     int ans=find(arr, t);
+//     System.out.println(ans);
+// }
+
+
+
+
+
+
+
+// public static char find(char[] num,char t){
+//     int l=0;
+//     int h=num.length-1;
+//     int c=0;
+
+//     while(l<=h){
+//         int mid =(l+h)/2;
+//         if(t==num[mid]){
+//             return num[mid];
+//         }
+//         else if(t<num[mid]){
+//             h=mid-1;
+//             c=l;
+//         }
+//         else{
+//             l=mid+1;
+//             c=l;
+//         }
+//     }
+//     return num[c-1];
+// }
+// public static void main(String[] args) {
+//     Scanner s=new Scanner(System.in);
+//     int n=s.nextInt();
+//     char[] arr=new char[n];
+
+//     for(int i=0;i<n;i++){
+//         arr[i]=s.next().charAt(0);
+//     }
+//     char t=s.next().charAt(0);
+//     char ans=find(arr,t);
+//     System.out.println(ans);
+
+// }
+
+
+
+// public static void place(int[] num,int t){
+//     int l=0;
+//     int h=num.length;
+//     int a=num[0];
+//     int b=0;
+//     for(int i=0;i<h;i++){
+//         for(int j=0;j<h-i;j++){
+//             if(t==num[i]){
+//                b=i;
+//                i++;
+//             }
+//         }
+//     }
+//     System.out.println(b);
+// }
+// public static void main(String[] args) {
+//     Scanner s=new Scanner(System.in);
+//     int n=s.nextInt();
+
+//     int arr[]=new int[n];
+
+//     for(int i=0;i<n;i++){
+//         arr[i]=s.nextInt();
+//     }
+//     int t=s.nextInt();
+
+//     place(arr, t);
+// }
+
+
+
+
+
+
 }
 
 
