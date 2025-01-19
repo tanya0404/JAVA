@@ -134,6 +134,96 @@ public class practice {
 
 
 
+    // static void swap(int[] num,int i,int j){
+        
+    //     int temp=num[i];
+    //     num[i]=num[j];
+    //     num[j]=temp;
+    //         }
+        
+    
+
+    // static void sort(int[] num){
+    //     int l=num[0];
+    //     int h=num.length-1;
+    //     int it=num[0];
+
+    //     while(it<=h){
+    //         if(num[it]==0){
+    //             swap(num,it,l);
+    //             it++;
+    //             l++;
+    //         }
+    //         else if(num[it]==1){
+    //             it++;
+    //         }
+    //         else{
+    //             swap(num,it,h);
+    //             h--;
+    //         }
+    //     }
+    //     for(int i=0;i<num.length;i++){
+    //         System.out.print(num[i]+" ");
+    //     }
+    // }
+    // public static void main(String[] args) {
+    //     Scanner s=new Scanner(System.in);
+    //     int n=s.nextInt();
+    //     int[] arr=new int[n];
+
+    //     for(int i=0;i<n;i++){
+    //         arr[i]=s.nextInt();
+    //     }
+       
+    //     sort(arr);
+    // }
+
+
+
+
+
+
+    static void swap(int[] num,int i,int j){
+        
+        int temp=num[i];
+        num[i]=num[j];
+        num[j]=temp;
+            }
+
+    static void shift(int[] num){
+        int l=0;
+        int h=num.length-1;
+        int it=0;
+
+        while(it<=h){
+            if(num[it]<0){
+                swap(num, it, l);
+                l++;
+                it++;
+            }
+            else if(num[it]>=0){
+                swap(num,it,h);
+                h--;
+            }
+        }
+        for(int i=0;i<num.length;i++){
+            System.out.print(num[i]+" ");
+        }
+    }
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+
+        int[] arr=new int[n];
+
+        for(int i=0;i<n;i++){
+            arr[i]=s.nextInt();
+        }
+
+        shift(arr);
+    }
+
+
 
 
 
