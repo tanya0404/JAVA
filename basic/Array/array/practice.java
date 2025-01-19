@@ -183,29 +183,134 @@ public class practice {
 
 
 
-    static void swap(int[] num,int i,int j){
+    // static void swap(int[] num,int i,int j){
         
+    //     int temp=num[i];
+    //     num[i]=num[j];
+    //     num[j]=temp;
+    //         }
+
+    // static void shift(int[] num){
+    //     int l=0;
+    //     int h=num.length-1;
+    //     int it=0;
+
+    //     while(it<=h){
+    //         if(num[it]<0){
+    //             swap(num, it, l);
+    //             l++;
+    //             it++;
+    //         }
+    //         else if(num[it]>=0){
+    //             swap(num,it,h);
+    //             h--;
+    //         }
+    //     }
+    //     for(int i=0;i<num.length;i++){
+    //         System.out.print(num[i]+" ");
+    //     }
+    // }
+    // public static void main(String[] args) {
+    //     Scanner s=new Scanner(System.in);
+    //     int n=s.nextInt();
+
+    //     int[] arr=new int[n];
+
+    //     for(int i=0;i<n;i++){
+    //         arr[i]=s.nextInt();
+    //     }
+
+    //     shift(arr);
+    // }
+
+
+
+
+
+
+    // static void set(int[] num1,int[] num2){
+    //     int n=num1.length;
+    //     int m=num2.length;
+        
+    //     int[] u=new int[n+m];
+    //     int i=0;
+    //     int j=0;
+    //     int k=0;
+    //     while(i<n && j<m){
+    //         if(num1[i]<num2[j]){
+    //             u[k]=num1[i];
+    //             k++;
+    //             i++;
+    //         }
+    //         else if(num1[i]>num2[j]){
+    //             u[k]=num2[j];
+    //             k++;
+    //             j++;
+    //         }
+    //         else if(num1[i]==num2[j]){
+    //             u[k]=num1[i];
+    //             i++;
+    //             j++;
+    //             k++;
+    //         }
+    //     }
+
+    //     while(i<n){
+    //         u[k]=num1[i];
+    //         k++;
+    //         i++;
+    //     }
+        
+    //     while(j<m){
+    //         u[k]=num2[j];
+    //         k++;
+    //         j++;
+    //     }
+
+    //     for(int a=0;a<u.length;a++){
+    //         System.out.print(u[a]+" ");
+    //     }
+    // }
+    // public static void main(String[] args) {
+    //     Scanner s=new Scanner(System.in);
+    //     int n=s.nextInt();
+    //     int m=s.nextInt();
+
+    //     int[] arr1=new int[n];
+        
+
+    //     for(int i=0;i<n;i++){
+    //         arr1[i]=s.nextInt();
+    //     }
+    //     int[] arr2=new int[m];
+    //     for(int i=0;i<m;i++){
+    //         arr2[i]=s.nextInt();
+    //     }
+
+    //     set(arr1,arr2);
+    // }
+
+
+
+
+    static void swap(int[] num,int i,int j){
+        while(i<=j){
         int temp=num[i];
         num[i]=num[j];
         num[j]=temp;
+        i++;
+        j--;
+        }
+        
             }
-
-    static void shift(int[] num){
+    static void cyl(int[] num,int k){
         int l=0;
         int h=num.length-1;
-        int it=0;
 
-        while(it<=h){
-            if(num[it]<0){
-                swap(num, it, l);
-                l++;
-                it++;
-            }
-            else if(num[it]>=0){
-                swap(num,it,h);
-                h--;
-            }
-        }
+        swap(num,l,h);
+        swap(num, 0, k-1);
+        swap(num,k,h);
+
         for(int i=0;i<num.length;i++){
             System.out.print(num[i]+" ");
         }
@@ -219,10 +324,9 @@ public class practice {
         for(int i=0;i<n;i++){
             arr[i]=s.nextInt();
         }
-
-        shift(arr);
+        int k=s.nextInt();
+        cyl(arr,k);
     }
-
 
 
 
