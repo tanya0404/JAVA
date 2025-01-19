@@ -293,27 +293,64 @@ public class practice {
 
 
 
-    static void swap(int[] num,int i,int j){
-        while(i<=j){
-        int temp=num[i];
-        num[i]=num[j];
-        num[j]=temp;
-        i++;
-        j--;
-        }
-        
-            }
-    static void cyl(int[] num,int k){
-        int l=0;
-        int h=num.length-1;
 
-        swap(num,l,h);
-        swap(num, 0, k-1);
-        swap(num,k,h);
+
+    // static void swap(int[] num,int i,int j){
+    //     while(i<=j){
+    //     int temp=num[i];
+    //     num[i]=num[j];
+    //     num[j]=temp;
+    //     i++;
+    //     j--;
+    //     }
+        
+    //         }
+    // static void cyl(int[] num,int k){
+    //     int l=0;
+    //     int h=num.length-1;
+
+    //     swap(num,l,h);
+    //     swap(num, 0, k-1);
+    //     swap(num,k,h);
+
+    //     for(int i=0;i<num.length;i++){
+    //         System.out.print(num[i]+" ");
+    //     }
+    // }
+    // public static void main(String[] args) {
+    //     Scanner s=new Scanner(System.in);
+    //     int n=s.nextInt();
+
+    //     int[] arr=new int[n];
+
+    //     for(int i=0;i<n;i++){
+    //         arr[i]=s.nextInt();
+    //     }
+    //     int k=s.nextInt();
+    //     cyl(arr,k);
+    // }
+
+
+
+
+
+
+    static void fun(int[] num){
+        int sum=0;
+        int maxi=num[0];
 
         for(int i=0;i<num.length;i++){
-            System.out.print(num[i]+" ");
+            sum=sum+num[i];
+
+            maxi= Math.max(sum, maxi);
+
+            if(sum<0){
+                sum=0;
+            }
         }
+        
+
+        System.out.println(maxi);
     }
     public static void main(String[] args) {
         Scanner s=new Scanner(System.in);
@@ -324,10 +361,9 @@ public class practice {
         for(int i=0;i<n;i++){
             arr[i]=s.nextInt();
         }
-        int k=s.nextInt();
-        cyl(arr,k);
+        
+        fun(arr);
     }
-
 
 
 
