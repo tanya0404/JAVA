@@ -292,7 +292,7 @@ public class practice {
 
 
 
-
+                                                // ROTATE ARRAY BY K 
 
 
     // static void swap(int[] num,int i,int j){
@@ -333,7 +333,7 @@ public class practice {
 
 
 
-
+                                            // LARGEST SUM IN ARRAY
 
     static void fun(int[] num){
         int sum=0;
