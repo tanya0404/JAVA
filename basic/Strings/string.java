@@ -107,6 +107,8 @@ public class string {
 // static void index(String s){
     
 //     System.out.println(s.substring(2));
+//     System.out.println(s.substring(1,4));
+
 // }
 
 // public static void main(String[] args) {
@@ -119,6 +121,36 @@ public class string {
 // index(st);
 
 // }    
+
+
+
+
+
+
+
+
+static void index(String s){
+    
+    int n=s.length();
+
+    for(int i=0;i<n;i++){
+        for(int j=i+1;j<=n;j++){
+            System.out.print(s.substring(i, j)+" ");
+        }
+    }
+
+}
+
+public static void main(String[] args) {
+
+
+Scanner s=new Scanner(System.in);
+String st=s.nextLine();
+
+
+index(st);
+
+}  
 
 
 
