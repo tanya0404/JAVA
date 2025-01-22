@@ -66,23 +66,55 @@ public class sorting {
 //                                                             SELECTION SORT
 
 
-static void sort(int[] num){
+// static void sort(int[] num){
     
-    for(int i=0;i<num.length;i++){
-        int min =num[i];
-        int minindex=i;
-        for(int j=i;j<num.length-1;j++){
-            if(num[j]<min){
-                min=Integer.MAX_VALUE;
-                minindex=-1;
+//    int n=num.length;
+//    for(int i=0;i<n;i++){
+//     int min=Integer.MAX_VALUE;
+//     int idx=-1;
+//     for(int j=i;j<n;j++){
+//         if(num[j]<min){
+//             min=num[j];
+//             idx=j;
+//         }
+//     }
+//     int temp=num[i];
+//     num[i]=num[idx];
+//     num[idx]=temp;
+//    }
+
+//    for(int i=0;i<n;i++){
+//     System.out.print(num[i]+" ");
+//    }
+
+// }
+// public static void main(String[] args) {
+//     Scanner s=new Scanner(System.in);
+//     int n=s.nextInt();
+//     int[] arr=new int[n];
+
+//     for(int i=0;i<n;i++){
+//         arr[i]=s.nextInt();
+//     }
+//     sort(arr);
+// }
+
+
+
+
+
+public static void sort(int[] num){
+    int n=num.length;
+    for(int i=1;i<n;i++){
+        for(int j=i;j>=1;j--){
+            if(num[j]<num[j-1]){
+                int temp=num[j];
+                num[j]=num[j-1];
+                num[j-1]=temp;
             }
         }
-        int temp=num[i];
-        num[i]=num[minindex];
-        num[minindex]=temp;
-
     }
-    for(int i=0;i<num.length;i++){
+    for(int i=0;i<n;i++){
         System.out.print(num[i]+" ");
     }
 }
@@ -96,7 +128,6 @@ public static void main(String[] args) {
     }
     sort(arr);
 }
-
 
 
 
