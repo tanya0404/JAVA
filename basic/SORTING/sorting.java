@@ -101,10 +101,48 @@ public class sorting {
 
 
 
+                                                // INSERTION SORT
 
 
-public static void sort(int[] num){
+// public static void sort(int[] num){
+//     int n=num.length;
+//     for(int i=1;i<n;i++){
+//         for(int j=i;j>=1;j--){
+//             if(num[j]<num[j-1]){
+//                 int temp=num[j];
+//                 num[j]=num[j-1];
+//                 num[j-1]=temp;
+//             }
+    // else{
+        // break
+    // }
+//         }
+//     }
+//     for(int i=0;i<n;i++){
+//         System.out.print(num[i]+" ");
+//     }
+// }
+// public static void main(String[] args) {
+//     Scanner s=new Scanner(System.in);
+//     int n=s.nextInt();
+//     int[] arr=new int[n];
+
+//     for(int i=0;i<n;i++){
+//         arr[i]=s.nextInt();
+//     }
+//     sort(arr);
+// }
+
+
+
+                                            // QUESTIONS
+
+
+public static void majority(int[] num){
+    
+    int l=0;
     int n=num.length;
+    int h=num.length-1;
     for(int i=1;i<n;i++){
         for(int j=i;j>=1;j--){
             if(num[j]<num[j-1]){
@@ -114,10 +152,11 @@ public static void sort(int[] num){
             }
         }
     }
-    for(int i=0;i<n;i++){
-        System.out.print(num[i]+" ");
-    }
-}
+    
+        int mid=l+(h-l)/2;
+        System.out.println(num[mid]);
+    
+}                                           
 public static void main(String[] args) {
     Scanner s=new Scanner(System.in);
     int n=s.nextInt();
@@ -126,10 +165,8 @@ public static void main(String[] args) {
     for(int i=0;i<n;i++){
         arr[i]=s.nextInt();
     }
-    sort(arr);
+    majority(arr);
 }
-
-
 
 
 
