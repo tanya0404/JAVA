@@ -114,7 +114,7 @@ public class sorting {
 //                 num[j-1]=temp;
 //             }
     // else{
-        // break
+        // break;
     // }
 //         }
 //     }
@@ -135,26 +135,63 @@ public class sorting {
 
 
 
-                                            // QUESTIONS
+                                            // MODE(N/2)
+
+
+// public static void majority(int[] num){
+    
+//     int l=0;
+//     int n=num.length;
+//     int h=num.length-1;
+//     for(int i=1;i<n;i++){
+//         for(int j=i;j>=1;j--){
+//             if(num[j]<num[j-1]){
+//                 int temp=num[j];
+//                 num[j]=num[j-1];
+//                 num[j-1]=temp;
+//             }
+//         }
+//     }
+    
+//         int mid=l+(h-l)/2;
+//         System.out.println(num[mid]);
+    
+// }                                           
+// public static void main(String[] args) {
+//     Scanner s=new Scanner(System.in);
+//     int n=s.nextInt();
+//     int[] arr=new int[n];
+
+//     for(int i=0;i<n;i++){
+//         arr[i]=s.nextInt();
+//     }
+//     majority(arr);
+// }
+
+
+                                        // TRANSFORM ARRAY
 
 
 public static void majority(int[] num){
-    
-    int l=0;
-    int n=num.length;
-    int h=num.length-1;
-    for(int i=1;i<n;i++){
-        for(int j=i;j>=1;j--){
-            if(num[j]<num[j-1]){
-                int temp=num[j];
-                num[j]=num[j-1];
-                num[j-1]=temp;
+
+       int n=num.length;
+        int x=0;
+    for(int i=0;i<n;i++){
+        int min=Integer.MAX_VALUE;
+        int id=-1;
+        for(int j=0;j<n;j++){
+            if(num[j]<min && num[j]>0){
+                min=num[j];
+                id=j;
             }
-        }
     }
-    
-        int mid=l+(h-l)/2;
-        System.out.println(num[mid]);
+                num[id]=x;
+                x--;
+}
+   for(int i=0;i<num.length;i++){
+        System.out.print((-1)*num[i]+" ");
+   }
+   
     
 }                                           
 public static void main(String[] args) {
