@@ -42,30 +42,6 @@ public class practice {
 
 
 
-    // public static void main(String[] args) {
-    //     Scanner s=new Scanner(System.in);
-    //     double price=s.nextDouble();
-    //     s.nextLine();
-    //     String dis=s.nextLine();
-    //     double val=s.nextDouble();
-    //     if(dis.equals("F")){
-    //         System.out.println("Discount Amount: "+val);
-    //         double dv=price-val;
-    //         System.out.println("Final Price: "+dv);
-    //     }
-    //     else if(dis.equals("P")){
-    //         System.out.println("Discount Percentage: "+val);
-    //         double per=(val*price)/100;
-    //         double fv=price-per;
-    //         System.out.println("Final Price: "+fv);
-    //     }
-    //     else{
-    //         System.out.println("Invalid discount type");
-    //     }
-        
-    // }
-
-
 
     // public static void max_min(int[] num){
     //     int max=num[0];
@@ -75,14 +51,13 @@ public class practice {
     //         if(num[i]>max){
     //             max=num[i];
     //         }
-    //     }
-    //     System.out.println(max);
-    //     for(int i=0;i<num.length;i++){
     //         if(num[i]<min){
     //             min=num[i];
     //         }
     //     }
     //     System.out.println(min);
+    //     
+    //     System.out.println(max);
     // }
     // public static void main(String[] args) {
     //     Scanner s=new Scanner(System.in);
@@ -335,35 +310,35 @@ public class practice {
 
                                             // LARGEST SUM IN ARRAY
 
-    static void fun(int[] num){
-        int sum=0;
-        int maxi=num[0];
+    // static void fun(int[] num){
+    //     int sum=0;
+    //     int maxi=num[0];
 
-        for(int i=0;i<num.length;i++){
-            sum=sum+num[i];
+    //     for(int i=0;i<num.length;i++){
+    //         sum=sum+num[i];
 
-            maxi= Math.max(sum, maxi);
+    //         maxi= Math.max(sum, maxi);
 
-            if(sum<0){
-                sum=0;
-            }
-        }
+    //         if(sum<0){
+    //             sum=0;
+    //         }
+    //     }
         
 
-        System.out.println(maxi);
-    }
-    public static void main(String[] args) {
-        Scanner s=new Scanner(System.in);
-        int n=s.nextInt();
+    //     System.out.println(maxi);
+    // }
+    // public static void main(String[] args) {
+    //     Scanner s=new Scanner(System.in);
+    //     int n=s.nextInt();
 
-        int[] arr=new int[n];
+    //     int[] arr=new int[n];
 
-        for(int i=0;i<n;i++){
-            arr[i]=s.nextInt();
-        }
+    //     for(int i=0;i<n;i++){
+    //         arr[i]=s.nextInt();
+    //     }
         
-        fun(arr);
-    }
+    //     fun(arr);
+    // }
 
 
 

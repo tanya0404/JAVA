@@ -172,38 +172,38 @@ public class sorting {
                                         // TRANSFORM ARRAY
 
 
-public static void majority(int[] num){
+// public static void majority(int[] num){
 
-       int n=num.length;
-        int x=0;
-    for(int i=0;i<n;i++){
-        int min=Integer.MAX_VALUE;
-        int id=-1;
-        for(int j=0;j<n;j++){
-            if(num[j]<min && num[j]>0){
-                min=num[j];
-                id=j;
-            }
-    }
-                num[id]=x;
-                x--;
-}
-   for(int i=0;i<num.length;i++){
-        System.out.print((-1)*num[i]+" ");
-   }
+//        int n=num.length;
+//         int x=0;
+//     for(int i=0;i<n;i++){
+//         int min=Integer.MAX_VALUE;
+//         int id=-1;
+//         for(int j=0;j<n;j++){
+//             if(num[j]<min && num[j]>0){
+//                 min=num[j];
+//                 id=j;
+//             }
+//     }
+//                 num[id]=x;
+//                 x--;
+// }
+//    for(int i=0;i<num.length;i++){
+//         System.out.print((-1)*num[i]+" ");
+//    }
    
     
-}                                           
-public static void main(String[] args) {
-    Scanner s=new Scanner(System.in);
-    int n=s.nextInt();
-    int[] arr=new int[n];
+// }                                           
+// public static void main(String[] args) {
+//     Scanner s=new Scanner(System.in);
+//     int n=s.nextInt();
+//     int[] arr=new int[n];
 
-    for(int i=0;i<n;i++){
-        arr[i]=s.nextInt();
-    }
-    majority(arr);
-}
+//     for(int i=0;i<n;i++){
+//         arr[i]=s.nextInt();
+//     }
+//     majority(arr);
+// }
 
 
 
