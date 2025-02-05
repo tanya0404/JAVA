@@ -1,6 +1,6 @@
 package neocolab;
 import java.util.Scanner;
-public class ques {
+// public class ques {
 
 
                                                     // multiply all odd digits of a number
@@ -104,23 +104,109 @@ public class ques {
         
 //     }
 
+// }
+
+                                    // sum and difference and chrch both are prime or not
+
+
+// class PrimeDecider {
+//     int a;
+//     int b;
+    
+//     public PrimeDecider(int a,int b){
+//         this.a=a;
+//         this.b=b;
+//     }
+    
+//     public boolean isprime(int num){
+//         if(num<=1){
+//             return false;
+//         }
+//         for(int i=2;i<=Math.sqrt(num);i++){
+//             if(num%i==0) return false;
+//         }
+        
+//         return true;
+//     }
+    
+//     public void decide(){
+//         int sum=a+b;
+//         int dif=Math.abs(b-a);
+//         System.out.print("Sum: "+sum+", ");
+//         System.out.println("Difference: "+dif);
+        
+//         if(isprime(sum)){
+//             System.out.println(sum+" is prime");
+//         }
+//         else{
+//             System.out.println(sum+" is not prime");
+//         }
+        
+//         if(isprime(dif)){
+//             System.out.println(dif+" is prime");
+//         }
+//         else{
+//             System.out.println(dif+" is not prime");
+//         }
+        
+        
+//         }
+    
+// }
+// public class Main {
+//     public static void main(String[] args) {
+//         Scanner scanner = new Scanner(System.in);
+//         int a = scanner.nextInt();
+//         int b = scanner.nextInt();
+//         PrimeDecider primeDecider = new PrimeDecider(a, b);
+//         primeDecider.decide();
+
+//         scanner.close();
+//     }
+// }
 
 
 
+                                    // check if a number is palindrome or not       
 
 
+                                    
+class PalindromeChecker{
+    int n;
+    public PalindromeChecker(int n){
+        this.n=n;
+    }
+    
+    public boolean isp(){
+        int og=n;
+        int reversed=0;
+        int num=n;
+        while(num!=0){
+            int digit=num%10;
+            reversed=reversed*10+digit;
+            num=num/10;
+        }
+        return og==reversed;
+    }
+    public void displayPalindromeCheckResult(){
+        if(isp()){
+            System.out.println(n+" is a Palindrome");
+        }
+        else{
+            System.out.println(n+" is not a Palindrome");
+        }
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
+        int inputNumber = scanner.nextInt();
 
+        PalindromeChecker palindromeChecker = new PalindromeChecker(inputNumber);
 
+        palindromeChecker.displayPalindromeCheckResult();
 
-
-
-
-
-
-
-
-
-
-
+        scanner.close();
+    }
 }
