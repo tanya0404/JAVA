@@ -171,42 +171,103 @@ import java.util.Scanner;
 
 
                                     
-class PalindromeChecker{
-    int n;
-    public PalindromeChecker(int n){
-        this.n=n;
-    }
+// class PalindromeChecker{
+//     int n;
+//     public PalindromeChecker(int n){
+//         this.n=n;
+//     }
     
-    public boolean isp(){
-        int og=n;
-        int reversed=0;
-        int num=n;
-        while(num!=0){
-            int digit=num%10;
-            reversed=reversed*10+digit;
-            num=num/10;
+//     public boolean isp(){
+//         int og=n;
+//         int reversed=0;
+//         int num=n;
+//         while(num!=0){
+//             int digit=num%10;
+//             reversed=reversed*10+digit;
+//             num=num/10;
+//         }
+//         return og==reversed;
+//     }
+//     public void displayPalindromeCheckResult(){
+//         if(isp()){
+//             System.out.println(n+" is a Palindrome");
+//         }
+//         else{
+//             System.out.println(n+" is not a Palindrome");
+//         }
+//     }
+// }
+// public class Main {
+//     public static void main(String[] args) {
+//         Scanner scanner = new Scanner(System.in);
+
+//         int inputNumber = scanner.nextInt();
+
+//         PalindromeChecker palindromeChecker = new PalindromeChecker(inputNumber);
+
+//         palindromeChecker.displayPalindromeCheckResult();
+
+//         scanner.close();
+//     }
+// }
+
+
+
+
+
+
+
+
+// class StringManipulation {
+    
+//     public static String insertSubstring(String og, String sb,int p){
+//         String ans=og.substring(0,p)+sb+og.substring(p);
+//         return ans;
+//     }
+// }
+
+
+// class Main {
+//     public static void main(String[] args) {
+//         Scanner scanner = new Scanner(System.in);
+
+//         String originalString = scanner.nextLine();
+//         String substringToInsert = scanner.nextLine();
+//         int insertionPosition = scanner.nextInt();
+//         String result = StringManipulation.insertSubstring(originalString, substringToInsert, insertionPosition);
+//         System.out.println(result);
+
+//         scanner.close();
+//     }
+// }
+
+
+
+
+class SimpleUniqueStringMerge {
+    public static String mergeUniqueStrings(String f, String s) {
+        String ans=f+s;
+        String result=" ";
+
+        for(int i=0;i<ans.length();i++){
+            char ch=ans.charAt(i);
+
+            if(result.indexOf(ch)==-1){
+                result=result+ch;
+            }
         }
-        return og==reversed;
+        return result;
     }
-    public void displayPalindromeCheckResult(){
-        if(isp()){
-            System.out.println(n+" is a Palindrome");
-        }
-        else{
-            System.out.println(n+" is not a Palindrome");
-        }
-    }
-}
-public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        int inputNumber = scanner.nextInt();
+        String firstString = scanner.nextLine();
+        String secondString = scanner.nextLine();
 
-        PalindromeChecker palindromeChecker = new PalindromeChecker(inputNumber);
-
-        palindromeChecker.displayPalindromeCheckResult();
+        String result = SimpleUniqueStringMerge.mergeUniqueStrings(firstString, secondString);
+        System.out.println(result);
 
         scanner.close();
     }
 }
+
